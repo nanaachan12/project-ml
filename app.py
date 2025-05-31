@@ -67,13 +67,14 @@ def rekomendasi():
     #     "jumlah_rekomendasi": len(rekomendasi_list),
     #     "hasil": rekomendasi_list
     # })
-
+    
     return jsonify({
         "query": query,
         "preferensi": preferensi,
         "jumlah_rekomendasi": len(hasil.to_dict(orient="records")),
         "hasil": hasil.to_dict(orient="records")
     })
+
 
 if __name__ == '__main__':
     import os
