@@ -2,6 +2,8 @@
 
 import re
 import string
+import nltk
+nltk.data.path.append('./nltk_data')
 from nltk.tokenize import word_tokenize
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from nltk.corpus import stopwords

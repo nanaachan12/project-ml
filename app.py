@@ -7,9 +7,6 @@ import pickle
 import re
 import os
 
-import nltk
-nltk.download('punkt')
-
 app = Flask(__name__)
 
 # ==== Load hasil preprocessing ====
